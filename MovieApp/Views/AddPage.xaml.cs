@@ -21,7 +21,7 @@ public partial class AddPage : ContentPage
         newMovie.Title = txtTitle.Text;
         newMovie.Rating = txtRating.Text;
         
-        App.MovieList.Add(newMovie);
+        App.MovieList.SaveMovie(newMovie); // Save to database
 
         txtTitle.Text = "";
         txtRating.Text = "";
